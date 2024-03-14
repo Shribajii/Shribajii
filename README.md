@@ -1,9 +1,11 @@
-- 👋 Hi, I’m @Shribajii
-- 👀 I’m interested in teaching
-- 🌱 I’m currently learning new techniques in Recruiting
-
-
-<!---
-Shribajii/Shribajii is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<html>
+  <head>
+    <title> Hello, I am Shri!</title>
+  </head>
+  <body>
+    <h1>Shri love doing Craft!</h1>
+    <p>
+      I'm a teacher<br>
+    </p>
+  </body>
+</html>
