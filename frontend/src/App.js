@@ -1,53 +1,84 @@
-import { useEffect } from "react";
-import "@/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Login from './pages/Login';
+import StudentDashboard from './pages/StudentDashboard';
+import TeacherDashboard from './pages/TeacherDashboard';
+import AdminDashboard from './pages/AdminDashboard';
+import TakeExam from './pages/TakeExam';
+import ViewResult from './pages/ViewResult';
+import { Toaster } from 'sonner';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+export const API = `${BACKEND_URL}/api`;
 
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+export const AuthContext = React.createContext(null);
 
 function App() {
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const savedUser = localStorage.getItem('user');
+    
+    if (token && savedUser) {
+      setUser(JSON.parse(savedUser));
+    }
+    setLoading(false);
+  }, []);
+
+  const login = (userData, token) => {
+    localStorage.setItem('token', token);
+    localStorage.setItem('user', JSON.stringify(userData));
+    setUser(userData);
+  };
+
+  const logout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setUser(null);
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-[#F8FAFC]">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
+
   return (
-    <div className="App">
+    <AuthContext.Provider value={{ user, login, logout }}>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
+        <div className="App">
+          <Routes>
+            <Route path="/login" element={!user ? <Login /> : <Navigate to={`/${user.role}`} />} />
+            <Route 
+              path="/student" 
+              element={user && user.role === 'student' ? <StudentDashboard /> : <Navigate to="/login" />} 
+            />
+            <Route 
+              path="/teacher" 
+              element={user && user.role === 'teacher' ? <TeacherDashboard /> : <Navigate to="/login" />} 
+            />
+            <Route 
+              path="/admin" 
+              element={user && user.role === 'admin' ? <AdminDashboard /> : <Navigate to="/login" />} 
+            />
+            <Route 
+              path="/exam/:examId" 
+              element={user && user.role === 'student' ? <TakeExam /> : <Navigate to="/login" />} 
+            />
+            <Route 
+              path="/result/:resultId" 
+              element={user ? <ViewResult /> : <Navigate to="/login" />} 
+            />
+            <Route path="/" element={<Navigate to={user ? `/${user.role}` : "/login"} />} />
+          </Routes>
+          <Toaster position="top-right" richColors />
+        </div>
       </BrowserRouter>
-    </div>
+    </AuthContext.Provider>
   );
 }
 
