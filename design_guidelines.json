@@ -1,0 +1,156 @@
+{
+  "identity": {
+    "name": "E1",
+    "mission": "Create a 'Flow State' examination platform that reduces anxiety through calm, focused, and optimistic design.",
+    "principles": [
+      "Fusion: Gamified Stats + Zen Garden Focus",
+      "Emotion: Optimism for students, Control for teachers",
+      "Content: Data is beautiful, Questions are clear",
+      "Contrast: Soft backgrounds vs. Sharp, high-contrast text"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "All section titles, page headers, and modal titles. DO NOT use Inter for headings.",
+      "letterSpacing": "tracking-tight"
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "General text, questions, instructions."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Timers, code snippets, ID numbers."
+    },
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-muted-foreground"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Electric Azure",
+        "hex": "#2563EB",
+        "usage": "Primary buttons, active states, links. (Avoid generic Purple/Teal)"
+      },
+      "secondary": {
+        "name": "Vibrant Coral",
+        "hex": "#F97316",
+        "usage": "Call to Actions (Start Exam), Alerts, High Priority."
+      },
+      "success": {
+        "name": "Mint Leaf",
+        "hex": "#10B981",
+        "usage": "Grades, Passed, Completed."
+      },
+      "background": {
+        "light": "#F8FAFC",
+        "paper": "#FFFFFF",
+        "dark": "#0F172A"
+      },
+      "text": {
+        "primary": "#0F172A",
+        "secondary": "#64748B"
+      }
+    },
+    "theme_strategy": "Light Mode First (Optimistic/Focus). Dark Mode optional but secondary.",
+    "gradients": "Use subtle mesh gradients for dashboard backgrounds only. NO gradients on buttons."
+  },
+  "visual_enhancers": {
+    "radius": "rounded-2xl",
+    "shadows": {
+      "card": "shadow-[0_2px_8px_rgba(0,0,0,0.08)]",
+      "hover": "shadow-[0_8px_24px_rgba(0,0,0,0.12)]",
+      "inner": "shadow-inner"
+    },
+    "glassmorphism": {
+      "usage": "Sticky headers, floating timers, modal overlays.",
+      "classes": "bg-white/80 backdrop-blur-md border border-white/20"
+    },
+    "borders": "1px solid #E2E8F0 (Light) / #1E293B (Dark)"
+  },
+  "layout_strategy": {
+    "dashboard": {
+      "type": "Bento Grid (Tetris Mode)",
+      "gap": "gap-6",
+      "padding": "p-6 md:p-8",
+      "rules": [
+        "Hero stats (Grades/Upcoming) take 2x2 or 2x1 spans.",
+        "Lists (Recent Results) take vertical spans.",
+        "Never fill 100% perfectly; leave breathing room."
+      ]
+    },
+    "exam_interface": {
+      "type": "Focus Mode",
+      "structure": "Split Screen or Centered Column.",
+      "sidebar": "Sticky right sidebar for Question Navigator & Timer.",
+      "main": "Clean, distraction-free question area. Large text."
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped or Rounded-lg. High contrast.",
+      "animation": "transform active:scale-95 transition-all duration-200"
+    },
+    "cards": {
+      "style": "Flat white surface, subtle border, soft shadow.",
+      "hover": "translate-y-[-2px] transition-transform"
+    },
+    "inputs": {
+      "style": "bg-slate-50 border-slate-200 focus:ring-2 focus:ring-primary/20 focus:border-primary"
+    },
+    "timer": {
+      "style": "Fixed/Sticky position. Monospace font. Changes color (Green -> Orange -> Red) as time depletes."
+    }
+  },
+  "image_urls": {
+    "hero_student": {
+      "url": "https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg",
+      "desc": "Students studying in library",
+      "usage": "Landing page hero or student dashboard banner"
+    },
+    "exam_focus": {
+      "url": "https://images.pexels.com/photos/6549858/pexels-photo-6549858.jpeg",
+      "desc": "Student focused on laptop",
+      "usage": "Exam instructions page or 'Get Started' section"
+    },
+    "teacher_tablet": {
+      "url": "https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg",
+      "desc": "Teacher using tablet",
+      "usage": "Teacher dashboard welcome or features section"
+    },
+    "classroom_interaction": {
+      "url": "https://images.pexels.com/photos/8472800/pexels-photo-8472800.jpeg",
+      "desc": "Modern classroom interaction",
+      "usage": "About page or 'For Institutions' section"
+    },
+    "abstract_bg": {
+      "url": "https://images.pexels.com/photos/28428584/pexels-photo-28428584.jpeg",
+      "desc": "Colorful abstract shapes",
+      "usage": "Login page background or subtle overlay"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add 'Outfit' and 'JetBrains Mono' via Google Fonts in index.html or CSS.",
+    "2. THEME SETUP: Configure tailwind.config.js with the 'Electric Azure' and 'Vibrant Coral' palette.",
+    "3. DASHBOARD: Build the Student Dashboard using the 'Bento Grid' layout. Make it look like a stats screen.",
+    "4. EXAM UI: Prioritize the 'Exam Taking Page'. It must be distraction-free. Use a sticky sidebar for the timer and question map.",
+    "5. COMPONENTS: Use Shadcn for complex logic (Calendars, Dialogs) but style them with the 'Visual Enhancers' rules (Rounded-2xl, Soft Shadows).",
+    "6. ANIMATION: Add 'framer-motion' for page transitions and list entrance animations. Make the timer pulse when low.",
+    "7. DATA-TESTID: Add data-testid to ALL interactive elements (buttons, inputs, question options)."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop' (generic centered layouts). Use asymmetry.",
+    "Dark colors look good independently, NOT as gradients.",
+    "Use glassmorphism with backdrop-blur-md for sticky elements.",
+    "Micro-animations on hover are mandatory.",
+    "Use 'sonner' for toast notifications."
+  ]
+}
