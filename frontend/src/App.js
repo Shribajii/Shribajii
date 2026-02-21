@@ -53,6 +53,7 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Routes>
+            <Route path="/" element={<SchoolHome />} />
             <Route path="/login" element={!user ? <Login /> : <Navigate to={`/${user.role}`} />} />
             <Route 
               path="/student" 
@@ -74,7 +75,6 @@ function App() {
               path="/result/:resultId" 
               element={user ? <ViewResult /> : <Navigate to="/login" />} 
             />
-            <Route path="/" element={<Navigate to={user ? `/${user.role}` : "/login"} />} />
           </Routes>
           <Toaster position="top-right" richColors />
         </div>
