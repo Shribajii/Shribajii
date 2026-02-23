@@ -50,7 +50,8 @@ function AboutUs() {
                 <img 
                   src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/uh8jagjg_WhatsApp%20Image%202026-02-23%20at%203.50.06%20PM%20%281%29.jpeg"
                   alt="Shri P. Venugopalan - Founder"
-                  className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
+                  className="rounded-3xl shadow-2xl w-full h-[600px] object-cover object-center"
+                  style={{ objectPosition: 'center 20%' }}
                 />
                 <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl">
                   <p className="font-outfit text-3xl font-bold">1911 - 1976</p>
