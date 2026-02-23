@@ -158,20 +158,20 @@ function SchoolHome() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: 'Primary Education',
-                desc: 'Grades 1-5: Building strong foundations in core subjects with interactive learning',
+                title: 'Nursery & KG',
+                desc: 'Early childhood education with play-based learning and foundational skills development',
                 icon: BookOpen,
                 color: 'primary'
               },
               {
-                title: 'Middle School',
-                desc: 'Grades 6-8: Comprehensive curriculum with focus on critical thinking and creativity',
+                title: 'Primary (1st - 5th)',
+                desc: 'Building strong academic foundations with focus on core subjects and values',
                 icon: Users,
                 color: 'secondary'
               },
               {
-                title: 'High School',
-                desc: 'Grades 9-12: Advanced programs preparing students for higher education and careers',
+                title: 'Secondary (6th - 10th)',
+                desc: 'Comprehensive CBSE curriculum preparing students for board examinations',
                 icon: GraduationCap,
                 color: 'success'
               }
