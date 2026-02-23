@@ -376,7 +376,7 @@ function SchoolHome() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <GraduationCap className="w-6 h-6" />
-                <h3 className="font-outfit text-xl font-bold">Excellence Academy</h3>
+                <h3 className="font-outfit text-xl font-bold">Veera Savarkar Netaji Matriculation School</h3>
               </div>
               <p className="text-gray-400 text-sm">
                 Empowering students to achieve excellence through quality education and holistic development.
