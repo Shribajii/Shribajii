@@ -411,7 +411,7 @@ function SchoolHome() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>© 2024 Excellence Academy. All rights reserved.</p>
+            <p>© 2024 Veera Savarkar Netaji Matriculation School. All rights reserved.</p>
           </div>
         </div>
       </footer>
