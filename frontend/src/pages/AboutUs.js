@@ -21,7 +21,11 @@ function AboutUs() {
               </Button>
               <div className="h-6 w-px bg-[#E2E8F0]"></div>
               <div className="flex items-center gap-2">
-                <GraduationCap className="w-6 h-6 text-primary" />
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/seuytedw_WhatsApp%20Image%202026-02-23%20at%203.50.05%20PM.jpeg"
+                  alt="VSNM School Logo"
+                  className="w-8 h-8 object-contain"
+                />
                 <h1 className="font-outfit text-xl font-bold text-[#0F172A]">About Us</h1>
               </div>
             </div>
