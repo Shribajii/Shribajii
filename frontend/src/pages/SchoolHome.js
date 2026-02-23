@@ -92,7 +92,7 @@ function SchoolHome() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-outfit text-4xl font-bold text-[#0F172A] mb-4">About Excellence Academy</h2>
+            <h2 className="font-outfit text-4xl font-bold text-[#0F172A] mb-4">About Veera Savarkar Netaji Matriculation School</h2>
             <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
               We are committed to providing quality education that prepares students for success in an ever-changing world.
             </p>
@@ -101,8 +101,8 @@ function SchoolHome() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
-                src="https://images.pexels.com/photos/8465455/pexels-photo-8465455.jpeg" 
-                alt="School building" 
+                src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/i5w9u3l0_WhatsApp%20Image%202026-02-23%20at%203.04.52%20PM%20%281%29.jpeg" 
+                alt="School Campus" 
                 className="rounded-3xl shadow-xl w-full h-[400px] object-cover"
               />
             </div>
