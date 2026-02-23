@@ -150,6 +150,7 @@ function AboutUs() {
                   src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/7y6y8szo_WhatsApp%20Image%202026-02-23%20at%203.50.06%20PM.jpeg"
                   alt="Mr. V. Mohan - Correspondent"
                   className="rounded-3xl shadow-xl w-full h-[500px] object-cover"
+                  style={{ objectPosition: 'center 20%' }}
                 />
                 <div className="mt-6 text-center">
                   <h3 className="font-outfit text-2xl font-bold text-[#0F172A]">Mr. V. Mohan</h3>
