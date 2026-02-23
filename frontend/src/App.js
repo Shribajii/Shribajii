@@ -55,6 +55,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<SchoolHome />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/login" element={!user ? <Login /> : <Navigate to={`/${user.role}`} />} />
             <Route 
               path="/student" 
