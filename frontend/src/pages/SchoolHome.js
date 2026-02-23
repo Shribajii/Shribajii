@@ -101,7 +101,7 @@ function SchoolHome() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <img 
-                src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/i5w9u3l0_WhatsApp%20Image%202026-02-23%20at%203.04.52%20PM%20%281%29.jpeg" 
+                src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/2p9pfbrj_333.jpeg" 
                 alt="School Campus" 
                 className="rounded-3xl shadow-xl w-full h-[400px] object-cover"
               />
