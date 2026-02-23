@@ -20,7 +20,7 @@ function SchoolHome() {
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a href="#home" className="text-[#0F172A] hover:text-primary transition-colors font-medium">Home</a>
-              <a href="#about" className="text-[#64748B] hover:text-primary transition-colors">About</a>
+              <a onClick={() => navigate('/about')} className="text-[#64748B] hover:text-primary transition-colors cursor-pointer">About</a>
               <a href="#programs" className="text-[#64748B] hover:text-primary transition-colors">Programs</a>
               <a href="#facilities" className="text-[#64748B] hover:text-primary transition-colors">Facilities</a>
               <a onClick={() => navigate('/gallery')} className="text-[#64748B] hover:text-primary transition-colors cursor-pointer">Gallery</a>
