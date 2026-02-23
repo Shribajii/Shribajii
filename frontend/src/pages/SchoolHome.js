@@ -259,14 +259,12 @@ function SchoolHome() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Smart Classrooms', desc: 'Interactive digital boards and modern teaching aids' },
               { title: 'Science Labs', desc: 'Fully equipped physics, chemistry, and biology laboratories' },
-              { title: 'Sports Complex', desc: 'Indoor and outdoor sports facilities for all games' },
               { title: 'Library', desc: 'Extensive collection of books and digital resources' },
               { title: 'Computer Labs', desc: 'Latest technology and high-speed internet access' },
-              { title: 'Auditorium', desc: 'State-of-the-art venue for events and programs' },
-              { title: 'Art Studio', desc: 'Dedicated space for creative and artistic expression' },
-              { title: 'Cafeteria', desc: 'Hygienic and nutritious meals in a comfortable setting' }
+              { title: 'Yoga Classes', desc: 'Physical and mental wellness through yoga practice' },
+              { title: 'Karate Training', desc: 'Self-defense and discipline through martial arts' },
+              { title: 'Silambam Classes', desc: 'Traditional Tamil martial art training' }
             ].map((facility, idx) => (
               <Card key={idx} className="border-0 shadow-[0_2px_8px_rgba(0,0,0,0.08)]">
                 <CardContent className="p-6">
