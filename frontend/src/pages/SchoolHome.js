@@ -145,6 +145,72 @@ function SchoolHome() {
         </div>
       </section>
 
+      {/* Photo Gallery Section */}
+      <section className="py-20 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="font-outfit text-4xl font-bold text-[#0F172A] mb-4">Our Campus</h2>
+            <p className="text-lg text-[#64748B] max-w-3xl mx-auto">
+              Take a virtual tour of our modern facilities and learning spaces
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
+              <div className="relative overflow-hidden rounded-3xl shadow-xl group">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/qbl6zirr_111.jpeg" 
+                  alt="School Classroom" 
+                  className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                  <h3 className="text-white font-outfit text-xl font-semibold">Modern Classrooms</h3>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+              <div className="relative overflow-hidden rounded-3xl shadow-xl group">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/fi2oomhz_222.jpeg" 
+                  alt="School Campus View" 
+                  className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                  <h3 className="text-white font-outfit text-xl font-semibold">Campus View</h3>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+              <div className="relative overflow-hidden rounded-3xl shadow-xl group">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/2p9pfbrj_333.jpeg" 
+                  alt="School Building" 
+                  className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                  <h3 className="text-white font-outfit text-xl font-semibold">School Building</h3>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>
+              <div className="relative overflow-hidden rounded-3xl shadow-xl group">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/6b0c6kok_444.jpeg" 
+                  alt="School Facilities" 
+                  className="w-full h-[350px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                  <h3 className="text-white font-outfit text-xl font-semibold">Learning Spaces</h3>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Programs Section */}
       <section id="programs" className="py-20 bg-[#F8FAFC]">
         <div className="max-w-7xl mx-auto px-6">
