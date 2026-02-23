@@ -50,6 +50,17 @@ function Login() {
     <div className="min-h-screen flex items-center justify-center p-4" style={{
       background: 'linear-gradient(135deg, #667eea20 0%, #764ba220 100%)'
     }}>
+      <Button 
+        variant="ghost" 
+        className="absolute top-4 left-4 gap-2"
+        onClick={() => window.location.href = '/'}
+        data-testid="back-to-home-btn"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to Home
+      </Button>
       <div className="w-full max-w-6xl grid md:grid-cols-2 gap-8 items-center">
         <div className="hidden md:block">
           <h1 className="font-outfit text-5xl font-bold text-[#0F172A] mb-4 tracking-tight">
