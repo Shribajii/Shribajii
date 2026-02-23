@@ -69,20 +69,20 @@ function SchoolHome() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="font-outfit text-5xl font-bold mb-2">2500+</p>
+              <p className="font-outfit text-5xl font-bold mb-2">1500+</p>
               <p className="text-blue-100">Active Students</p>
             </div>
             <div className="text-center">
-              <p className="font-outfit text-5xl font-bold mb-2">150+</p>
-              <p className="text-blue-100">Expert Teachers</p>
+              <p className="font-outfit text-5xl font-bold mb-2">75+</p>
+              <p className="text-blue-100">Dedicated Teachers</p>
             </div>
             <div className="text-center">
-              <p className="font-outfit text-5xl font-bold mb-2">98%</p>
+              <p className="font-outfit text-5xl font-bold mb-2">95%</p>
               <p className="text-blue-100">Success Rate</p>
             </div>
             <div className="text-center">
-              <p className="font-outfit text-5xl font-bold mb-2">25+</p>
-              <p className="text-blue-100">Years Experience</p>
+              <p className="font-outfit text-5xl font-bold mb-2">15+</p>
+              <p className="text-blue-100">Years Excellence</p>
             </div>
           </div>
         </div>
