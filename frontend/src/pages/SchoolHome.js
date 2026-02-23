@@ -55,7 +55,7 @@ function SchoolHome() {
             </motion.div>
             <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
               <img 
-                src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/woq7zb5q_WhatsApp%20Image%202026-02-23%20at%203.04.52%20PM.jpeg" 
+                src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/6b0c6kok_444.jpeg" 
                 alt="Veera Savarkar Netaji Matriculation School Building" 
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
               />
