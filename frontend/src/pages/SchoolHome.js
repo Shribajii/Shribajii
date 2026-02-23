@@ -69,12 +69,12 @@ function SchoolHome() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <p className="font-outfit text-5xl font-bold mb-2">1500+</p>
+              <p className="font-outfit text-5xl font-bold mb-2">400+</p>
               <p className="text-blue-100">Active Students</p>
             </div>
             <div className="text-center">
-              <p className="font-outfit text-5xl font-bold mb-2">75+</p>
-              <p className="text-blue-100">Dedicated Teachers</p>
+              <p className="font-outfit text-5xl font-bold mb-2">25+</p>
+              <p className="text-blue-100">Expert Teachers</p>
             </div>
             <div className="text-center">
               <p className="font-outfit text-5xl font-bold mb-2">95%</p>
