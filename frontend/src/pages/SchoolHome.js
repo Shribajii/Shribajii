@@ -23,6 +23,7 @@ function SchoolHome() {
               <a href="#about" className="text-[#64748B] hover:text-primary transition-colors">About</a>
               <a href="#programs" className="text-[#64748B] hover:text-primary transition-colors">Programs</a>
               <a href="#facilities" className="text-[#64748B] hover:text-primary transition-colors">Facilities</a>
+              <a onClick={() => navigate('/gallery')} className="text-[#64748B] hover:text-primary transition-colors cursor-pointer">Gallery</a>
               <a href="#contact" className="text-[#64748B] hover:text-primary transition-colors">Contact</a>
               <Button onClick={() => navigate('/login')} className="bg-primary hover:bg-primary/90" data-testid="portal-login-btn">
                 Student Portal
