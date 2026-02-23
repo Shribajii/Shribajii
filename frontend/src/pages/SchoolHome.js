@@ -16,7 +16,7 @@ function SchoolHome() {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
               <GraduationCap className="w-8 h-8 text-primary" />
-              <h1 className="font-outfit text-2xl font-bold text-[#0F172A]">Excellence Academy</h1>
+              <h1 className="font-outfit text-xl md:text-2xl font-bold text-[#0F172A]">Veera Savarkar Netaji Matriculation School</h1>
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a href="#home" className="text-[#0F172A] hover:text-primary transition-colors font-medium">Home</a>
