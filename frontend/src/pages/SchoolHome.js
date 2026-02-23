@@ -15,7 +15,11 @@ function SchoolHome() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
-              <GraduationCap className="w-8 h-8 text-primary" />
+              <img 
+                src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/seuytedw_WhatsApp%20Image%202026-02-23%20at%203.50.05%20PM.jpeg"
+                alt="VSNM School Logo"
+                className="w-10 h-10 object-contain"
+              />
               <h1 className="font-outfit text-xl md:text-2xl font-bold text-[#0F172A]">Veera Savarkar Netaji Matriculation School</h1>
             </div>
             <div className="hidden md:flex items-center gap-8">
