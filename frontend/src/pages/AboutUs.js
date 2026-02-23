@@ -146,7 +146,7 @@ function AboutUs() {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
               <div className="sticky top-24">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/uh8jagjg_WhatsApp%20Image%202026-02-23%20at%203.50.06%20PM%20%281%29.jpeg"
+                  src="https://customer-assets.emergentagent.com/job_resultpro/artifacts/7y6y8szo_WhatsApp%20Image%202026-02-23%20at%203.50.06%20PM.jpeg"
                   alt="Mr. V. Mohan - Correspondent"
                   className="rounded-3xl shadow-xl w-full h-[500px] object-cover"
                 />
