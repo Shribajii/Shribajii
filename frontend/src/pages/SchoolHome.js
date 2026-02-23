@@ -41,7 +41,7 @@ function SchoolHome() {
                 Empowering Minds,<br />Building Futures
               </h1>
               <p className="text-lg text-[#64748B] mb-8 leading-relaxed">
-                Excellence Academy is a premier educational institution dedicated to providing world-class education through innovative teaching methods and state-of-the-art facilities.
+                Veera Savarkar Netaji Matriculation School is a premier educational institution in Chennai, dedicated to providing quality education through innovative teaching methods and comprehensive student development programs.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" onClick={() => navigate('/login')} className="bg-primary hover:bg-primary/90" data-testid="get-started-btn">
