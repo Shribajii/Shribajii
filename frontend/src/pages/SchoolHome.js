@@ -294,7 +294,7 @@ function SchoolHome() {
                   </div>
                   <div>
                     <h3 className="font-outfit font-semibold text-[#0F172A] mb-1">Address</h3>
-                    <p className="text-[#64748B]">123 Education Street, Knowledge City, State 12345</p>
+                    <p className="text-[#64748B]">No 14, Kumaran Street, Lakshmipuram, Kolathur, Chennai - 600099</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -303,7 +303,7 @@ function SchoolHome() {
                   </div>
                   <div>
                     <h3 className="font-outfit font-semibold text-[#0F172A] mb-1">Phone</h3>
-                    <p className="text-[#64748B]">+1 (555) 123-4567</p>
+                    <p className="text-[#64748B]">+91 93423 58450<br />044 2565 6666</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -312,7 +312,7 @@ function SchoolHome() {
                   </div>
                   <div>
                     <h3 className="font-outfit font-semibold text-[#0F172A] mb-1">Email</h3>
-                    <p className="text-[#64748B]">info@excellenceacademy.edu</p>
+                    <p className="text-[#64748B]">vsnmschool@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -321,7 +321,7 @@ function SchoolHome() {
                   </div>
                   <div>
                     <h3 className="font-outfit font-semibold text-[#0F172A] mb-1">Office Hours</h3>
-                    <p className="text-[#64748B]">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    <p className="text-[#64748B]">Monday - Friday: 8:00 AM - 5:00 PM<br/>Saturday: 8:00 AM - 1:00 PM</p>
                   </div>
                 </div>
               </div>
