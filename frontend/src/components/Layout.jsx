@@ -97,7 +97,8 @@ export default function Layout() {
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-border">
           <div className="text-xs text-muted-foreground">
             <p className="font-medium text-foreground">Model: RandomForest</p>
-            <p className="mt-1">Trained on 2000+ samples</p>
+            <p className="mt-1">Accuracy: ~81%</p>
+            <p className="mt-1 text-[10px]">ML Project - Loan Approval Prediction</p>
           </div>
         </div>
       </aside>

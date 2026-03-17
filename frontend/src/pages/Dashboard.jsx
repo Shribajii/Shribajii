@@ -82,8 +82,8 @@ export default function Dashboard() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Dashboard</h1>
-          <p className="text-muted-foreground mt-1">Loan prediction overview and analytics</p>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight">Loan Approval Prediction System</h1>
+          <p className="text-muted-foreground mt-1">Machine Learning powered loan eligibility assessment</p>
         </div>
         <Link to="/predict">
           <Button className="gap-2" data-testid="new-prediction-btn">
