@@ -1,34 +1,120 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* App-specific styles */
+
+.sidebar {
+    @apply fixed left-0 top-0 h-full w-64 bg-card border-r border-border z-40;
+    @apply transition-transform duration-300 ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+.sidebar-collapsed {
+    @apply -translate-x-full md:translate-x-0 md:w-20;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.main-content {
+    @apply ml-0 md:ml-64 min-h-screen transition-all duration-300;
 }
 
-.App-link {
-    color: #61dafb;
+.main-content-expanded {
+    @apply md:ml-20;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Page transitions */
+.page-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+/* Form styles */
+.form-section {
+    @apply p-6 bg-card border border-border rounded-sm;
+}
+
+.form-section-title {
+    @apply text-lg font-semibold mb-4 text-foreground tracking-tight;
+    font-family: 'Chivo', sans-serif;
+}
+
+/* Result card styles */
+.result-approved {
+    @apply border-emerald-500/50 bg-emerald-500/5;
+}
+
+.result-rejected {
+    @apply border-red-500/50 bg-red-500/5;
+}
+
+/* Table styles */
+.data-table {
+    @apply w-full border-collapse;
+}
+
+.data-table th {
+    @apply text-left p-4 bg-muted/50 font-medium text-muted-foreground text-sm uppercase tracking-wider;
+    font-family: 'Chivo', sans-serif;
+}
+
+.data-table td {
+    @apply p-4 border-t border-border;
+}
+
+.data-table tr:hover td {
+    @apply bg-muted/30;
+}
+
+/* Chart container */
+.chart-container {
+    @apply w-full h-[300px] p-4;
+}
+
+/* Badge variations */
+.badge-approved {
+    @apply bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30;
+}
+
+.badge-rejected {
+    @apply bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/30;
+}
+
+/* Metric card */
+.metric-card {
+    @apply p-6 bg-card border border-border rounded-sm transition-all duration-300 hover:border-primary/50 hover:shadow-md;
+}
+
+.metric-value {
+    @apply text-3xl font-bold tracking-tight;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.metric-label {
+    @apply text-sm text-muted-foreground mt-1;
+}
+
+/* Navigation active state */
+.nav-item-active {
+    @apply bg-primary/10 text-primary border-l-2 border-primary;
+}
+
+/* Input focus state */
+input:focus, select:focus, textarea:focus {
+    @apply ring-2 ring-primary/50 border-primary;
+}
+
+/* Button active state */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Loading skeleton */
+.skeleton {
+    @apply animate-pulse bg-muted rounded;
+}
+
+/* Tooltip custom */
+.tooltip-content {
+    @apply bg-foreground text-background px-3 py-1.5 rounded text-sm;
 }
