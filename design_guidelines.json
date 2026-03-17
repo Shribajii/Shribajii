@@ -1,0 +1,152 @@
+{
+  "identity": {
+    "name": "E1",
+    "persona": "The Anti-AI Designer",
+    "mission": "Create a financial interface that feels like a Swiss vault—precise, secure, and visually commanding. Reject generic 'SaaS blue' templates.",
+    "vibe": "Authority, Precision, Wealth, Clarity.",
+    "archetype": "Swiss & High-Contrast (Archetype 4) mixed with Jewel & Luxury (Archetype 5)."
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Chivo, sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&display=swap",
+        "usage": "Use for all H1-H3. Weight 900 for Hero, 700 for Section Headers.",
+        "style": "tracking-tight leading-none"
+      },
+      "body": {
+        "family": "Inter, sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap",
+        "usage": "Use for all paragraphs, data tables, and inputs.",
+        "style": "tracking-normal leading-relaxed"
+      },
+      "mono": {
+        "family": "JetBrains Mono, monospace",
+        "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap",
+        "usage": "Use for financial figures, prediction scores, and ID numbers.",
+        "style": "text-xs tracking-wider"
+      }
+    }
+  },
+  "colors": {
+    "theme_strategy": "Smart Toggle (Default Light for Trust, Dark for Power Users)",
+    "palette": {
+      "light": {
+        "background": "#FDFDFD",
+        "foreground": "#0F172A",
+        "primary": "#064E3B",
+        "secondary": "#334155",
+        "accent": "#D97706",
+        "surface": "#FFFFFF",
+        "border": "#E2E8F0"
+      },
+      "dark": {
+        "background": "#020617",
+        "foreground": "#F8FAFC",
+        "primary": "#10B981",
+        "secondary": "#94A3B8",
+        "accent": "#F59E0B",
+        "surface": "#0F172A",
+        "border": "#1E293B"
+      }
+    },
+    "chart_colors": {
+      "approved": "#10B981",
+      "rejected": "#EF4444",
+      "pending": "#F59E0B",
+      "income": "#3B82F6",
+      "loan": "#8B5CF6"
+    }
+  },
+  "visual_enhancers": {
+    "radius": "rounded-sm",
+    "shadows": {
+      "card": "shadow-[0_1px_2px_0_rgba(0,0,0,0.05)]",
+      "hover": "shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)]",
+      "glass": "backdrop-blur-md bg-white/70 dark:bg-black/70 border border-white/20"
+    },
+    "gradients": {
+      "hero_text": "bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-teal-900 dark:from-emerald-400 dark:to-teal-200",
+      "surface_sheen": "bg-gradient-to-br from-white to-slate-50 dark:from-slate-900 dark:to-slate-950"
+    }
+  },
+  "layout": {
+    "grid_system": "Bento Grid Protocol",
+    "spacing": {
+      "container": "p-8 md:p-12 lg:p-16",
+      "gap": "gap-6 md:gap-8",
+      "internal": "p-6"
+    },
+    "container_width": "max-w-7xl mx-auto"
+  },
+  "components": {
+    "cards": {
+      "style": "border border-border bg-card text-card-foreground shadow-sm rounded-sm hover:border-primary/50 transition-colors duration-300",
+      "header": "pb-2 space-y-1",
+      "content": "pt-0"
+    },
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-2 rounded-sm font-medium transition-transform active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-6 py-2 rounded-sm",
+      "ghost": "hover:bg-accent hover:text-accent-foreground rounded-sm"
+    },
+    "inputs": {
+      "style": "h-11 rounded-sm border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "charts": {
+      "library": "Recharts (via Shadcn Chart)",
+      "style": "Minimal axes, custom tooltips, responsive container"
+    }
+  },
+  "pages": {
+    "dashboard": {
+      "layout": "Grid with 4 key metric cards at top, followed by 2 large chart areas (Income Distribution, Loan Term) and a 'Recent Predictions' list.",
+      "key_features": "Quick Predict Widget (Sidebar or Top Right), Approval Rate Gauge."
+    },
+    "prediction_form": {
+      "layout": "Two-column layout for inputs. Section headers: 'Personal Details', 'Financials', 'Loan Details'. Sticky 'Submit' bar.",
+      "interaction": "Real-time validation. Confidence score reveals with a smooth counter animation."
+    },
+    "history": {
+      "layout": "Data Table with sortable columns. Filter bar at top (Date, Status, Amount).",
+      "visuals": "Status badges (Green pill for Approved, Red pill for Rejected)."
+    },
+    "analytics": {
+      "layout": "Masonry or Bento grid of charts. Correlation heatmap, Feature importance bar chart.",
+      "vibe": "Data density, high contrast lines."
+    }
+  },
+  "assets": {
+    "image_urls": {
+      "hero_bg": "https://images.unsplash.com/photo-1673551799119-9eae59a56e72?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjBhcmNoaXRlY3R1cmUlMjBjb25jcmV0ZSUyMGdsYXNzfGVufDB8fHx8MTc3MzczNzM0NXww&ixlib=rb-4.1.0&q=85",
+      "login_side": "https://images.unsplash.com/photo-1673551798545-067afa50627e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBhcmNoaXRlY3R1cmUlMjBjb25jcmV0ZSUyMGdsYXNzfGVufDB8fHx8MTc3MzczNzM0NXww&ixlib=rb-4.1.0&q=85",
+      "abstract_graph": "https://images.unsplash.com/photo-1592495989226-03f88104f8cc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGZpbmFuY2lhbCUyMGdyb3d0aCUyMGdyYXBoJTIwbWluaW1hbHxlbnwwfHx8fDE3NzM3MzczNDZ8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "usage_rules": {
+      "hero_bg": "Use as a subtle background with heavy overlay (90% opacity) for the Dashboard header.",
+      "login_side": "Use full height on the left side of the Login/Signup page.",
+      "abstract_graph": "Use in the 'About' section or as a placeholder for empty states."
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text is APCA compliant. Use Slate-700 minimum on white.",
+    "motion": "Respect prefers-reduced-motion. All graphs must have tooltips for screen readers.",
+    "focus": "Visible ring-2 ring-primary ring-offset-2 on all interactive elements."
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Inter' for headings. Use Chivo.",
+    "Avoid standard 'SaaS Blue' (#2563EB). Use Deep Emerald or Slate.",
+    "Use 2x more padding than you think is necessary.",
+    "Every interaction must have a hover state.",
+    "Do not use native HTML inputs; use Shadcn components.",
+    "All interactive elements must have data-testid attributes (kebab-case)."
+  ],
+  "instructions_to_main_agent": {
+    "step_1": "Setup global CSS variables and font imports.",
+    "step_2": "Create layout wrapper with Sidebar/Navbar.",
+    "step_3": "Build the Prediction Form using react-hook-form and Shadcn Form.",
+    "step_4": "Integrate Recharts for the Analytics page.",
+    "step_5": "Connect to FastAPI endpoints (mock if needed initially).",
+    "step_6": "Polish with motion (framer-motion) and toast notifications (sonner)."
+  }
+}
